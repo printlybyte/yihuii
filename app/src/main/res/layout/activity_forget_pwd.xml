@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yihuii.yihuii.logoo.ForgetPwd">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@mipmap/foget_mim_beijign"
+        android:layout_width="match_parent"
+        android:layout_height="164dp">
+
+        <TextView
+            android:id="@+id/forgret_fanhui"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@mipmap/back_jianjiao"
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+      <RelativeLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:id="@+id/image_logo"
+              android:layout_marginTop="25dp"
+              android:src="@mipmap/yihui_logo"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="center_vertical"
+              android:layout_width="77dp"
+              android:layout_height="77dp" />
+          <ImageView
+              android:src="@mipmap/yihui_wenzi"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/image_logo"
+              android:layout_marginTop="11dp"
+              android:layout_width="77dp"
+              android:layout_height="20dp" />
+      </RelativeLayout>
+
+        
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_tishi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:text="请使用手机号+验证码的方式重设 点击下一步表示同意(用户协议)"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/text_tishi"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="+86"
+                android:textSize="16sp"
+                android:background="#1d3782"
+                android:layout_marginLeft="35dp"
+                android:layout_width="62dp"
+                android:layout_height="match_parent" />
+           <EditText
+               android:id="@+id/edit_btn_phone"
+               android:layout_marginRight="35dp"
+               android:maxLength="11"
+               android:singleLine="true"
+               android:phoneNumber="true"
+               android:hint="请输入手机号"
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_forget_fasong"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="发送验证码"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:background="@mipmap/btn_fa_foget"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    
+
+
+
+</LinearLayout>

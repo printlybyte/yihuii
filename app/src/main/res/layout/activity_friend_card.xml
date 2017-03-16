@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.ziactivity.CardActivity">
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:background="@mipmap/yihuir_login_backgroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/fan_hui_tv"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/login_back_icon"
+            android:layout_width="0dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="3"
+            android:text="商务"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/cao_zuo_tv"
+            android:text="操作"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--头像及简介-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/head_log_iv"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/my_headview_src"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:id="@+id/text_head"
+                    android:layout_below="@+id/head_log_iv"
+                    android:text="设置头像"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:textSize="13dp"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/name_et"
+                    android:hint="姓名"
+                    android:drawableRight="@mipmap/edit_page_name_right"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/text_head"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:id="@+id/jie_et"
+                    android:hint="简介"
+                    android:layout_below="@+id/name_et"
+                    android:drawableRight="@mipmap/edit_page_name_right"
+                    android:background="@color/white"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/text_head"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </RelativeLayout>
+            <!--基本信息文字-->
+            <TextView
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="基本信息"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <!--基本信息介绍-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <RelativeLayout
+                    android:id="@+id/xing_bie_rl"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="性别:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/xing_bie_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:id="@+id/suo_zhu_rl"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox2"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="所住地:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <!--地址信息-->
+                    <TextView
+                        android:id="@+id/di_zi_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--工作，新增-->
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="工作"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ListView
+                    android:background="@color/white"
+                    android:id="@+id/list_work_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+                <Button
+                    android:id="@+id/xin_work_bt"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:text="新增"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <!--所属组织或商协会，新增-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/white"
+                    android:text="所属组织或商协会"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ListView
+                    android:background="@color/white"
+                    android:id="@+id/list_work2_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+                <Button
+                    android:id="@+id/xin_work2_bt"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:text="新增"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <!--技能-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/white"
+                    android:text="技能"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ListView
+                    android:background="@color/white"
+                    android:id="@+id/list_work3_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+                <Button
+                    android:id="@+id/xin_work3_bt"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:text="新增"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <!--教育-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/white"
+                    android:text="所属组织或商协会"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <ListView
+                    android:background="@color/white"
+                    android:id="@+id/list_work4_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+                <Button
+                    android:id="@+id/xin_work4_bt"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:text="新增"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <!--联系方式-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/lian_xi_rl"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox3"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="手机:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/phone_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:id="@+id/lian_xi_qq_rl"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox4"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="QQ:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/qq_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:id="@+id/you_xiang_rl"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox5"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="手机:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/you_xiang_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:id="@+id/wei_xin_rl"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox6"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="微信:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/wei_xin_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:id="@+id/dian_hua_rl"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <CheckBox
+                        android:background="@mipmap/editt_check_normal"
+                        android:id="@+id/checkbox7"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="电话:"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/checkbox7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/dian_hua_tv"
+                        android:drawableRight="@mipmap/edit_page_name_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

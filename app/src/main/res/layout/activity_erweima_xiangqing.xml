@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_erweima_xiangqing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.me_Activity.me_activity_erweima.erweima_xiangqing">
+
+    <include layout="@layout/inicode"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/huodong_erweim_shengchng">
+
+        <ImageView
+            android:layout_marginBottom="100dp"
+          android:layout_centerHorizontal="true"
+            android:id="@+id/erweima_uri"
+
+            android:layout_width="150dp"
+            android:scaleType="fitXY"
+            android:layout_height="150dp"
+           android:layout_alignParentBottom="true"
+           android:background="#ddd"/>
+    </RelativeLayout>
+</LinearLayout>

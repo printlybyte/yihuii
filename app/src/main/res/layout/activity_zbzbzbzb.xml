@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zbzbzbzb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.ossrs.yasea.zbzbzbzb">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/shipin_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <net.ossrs.yasea.SrsCameraView
+            android:id="@+id/glsurfaceview_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@mipmap/zhibo_stop" />
+
+        <Button
+            android:id="@+id/zhibo_jietu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/zhibo_jietu" />
+
+        <Button
+            android:id="@+id/swCam"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/publish"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/publish"
+            android:background="@mipmap/shexiang_qiehuan" />
+
+        <Button
+            android:id="@+id/zhibo_luyin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/publish"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/swCam"
+            android:background="@mipmap/zhibo_luyin" />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/publish"
+            android:layout_toRightOf="@id/swCam"
+            android:text="record"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/light_deng"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/publish"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/publish"
+            android:background="@mipmap/shanguangdeng" />
+
+        <Button
+            android:id="@+id/zhibo_shipin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/publish"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/light_deng"
+            android:background="@mipmap/shiping_start" />
+
+        <Button
+            android:id="@+id/swEnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/publish"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/record"
+            android:text="soft encoding"
+            android:visibility="gone" />
+        <!--美颜-->
+        <Button
+            android:id="@+id/swFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="beauty"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent_material_light"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/yinpin_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blueviolet"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/yinpin_zhibo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/yinpin_zhibo_stop" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+

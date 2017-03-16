@@ -1,0 +1,2 @@
+include ':app', ':lib-zxing', ':zxing', ':qrcodecore', ':library_phoro_bga', ':citypickerview', ':recyclerview-swipe'
+include ':library'

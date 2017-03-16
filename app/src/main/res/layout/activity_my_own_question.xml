@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_own_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f7f8"
+    android:orientation="vertical"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.me_Activity.me_wenda.MyOwnQuestionActivity">
+
+    <include layout="@layout/inicode" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list_wenda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f1f7f8"
+        android:dividerHeight="10dip"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+
+</LinearLayout>

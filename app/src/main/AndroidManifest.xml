@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yihuii.yihuii">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 开启闪光灯权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 新浪微博客户端分享回调必须配置 -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".logoo.logo"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".logoo.LogoinActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainFrame.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".logoo.ForgetPwd"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainFrame.frament1.Html_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MainFrame.frament1.QRcode_Activity" />
+        <activity android:name=".MainFrame.frament1.city_search" />
+        <activity
+            android:name=".MainFrame.frament4.ziactivity.CardActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainFrame.frament4.ziactivity.MyOwnActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".MainFrame.frament4.ziactivity.FabuActivity" />
+        <activity android:name=".MainFrame.frament4.ziactivity.xuqiu.MyOwnNeedActivity" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_wenda.MyOwnQuestionActivity" />
+        <activity android:name=".MainFrame.frament4.ziactivity.MyOwnMeetActivity" />
+        <activity android:name="net.ossrs.yasea.zhibozhibo" />
+        <activity android:name=".MainFrame.frament1.Setting_activ" />
+        <activity android:name=".MainFrame.frament1.mingpian_camera" />
+        <activity android:name=".MainFrame.frament4.ziactivity.xuqiu.Need_chuangjian" />
+        <activity android:name=".MainFrame.frament1.mingpian_tuku" />
+        <activity android:name=".MainFrame.frament1.test_test" />
+        <activity android:name=".MainFrame.frament4.me_mingpian_edit.me_shezhi_gongzuo_edit" />
+        <activity android:name=".MainFrame.frament4.me_mingpian_edit.me_bianji_jiaoyujingli" />
+        <activity android:name=".MainFrame.frament4.me_mingpian_edit.me_weixin" />
+        <activity android:name="net.ossrs.yasea.zbzbzbzb" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_me_huodong" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_activity_haoyou.haoyou_activity" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_activity_erweima.erweima_xiangqing" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_activity_haoyou.haoyou_xiangqing" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_huodong_xiangqing" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_wenda.wenda_xiangqing" />
+        <activity android:name=".MainFrame.frament3.other.pinglun_xiangqing" />
+        <activity android:name=".MainFrame.frament3.other.faxian_huodong_xaingqing" />
+        <activity android:name=".MainFrame.frament2.huiyou_xiangqing.huiyou_item_xiangqing" />
+        <activity android:name=".MainFrame.frament1.qindao_xiangqing" />
+        <activity android:name=".MainFrame.frament1.shezhi_pak.yijian_fankui" />
+        <activity android:name=".MainFrame.frament1.shezhi_pak.guanyu_xiangqing" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".MainFrame.frament4.ziactivity.gerenmingpian_yulan" />
+        <activity android:name=".MainFrame.frament4.me_Activity.me_activity_pinglun.pinglun_xiangqing"></activity>
+    </application>
+
+</manifest>

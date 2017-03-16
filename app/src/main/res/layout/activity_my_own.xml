@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_own"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.ziactivity.MyOwnActivity">
+    <LinearLayout
+        android:id="@+id/text"
+        android:background="@mipmap/yihuir_login_backgroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/fan_hui_tv"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/login_back_icon"
+            android:layout_width="0dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="3"
+            android:text="商务"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/cao_zuo_tv"
+            android:text="操作"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/me_activity_lv"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

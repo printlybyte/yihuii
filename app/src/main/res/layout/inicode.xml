@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/banner"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mBtn_incloud_back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/back_jianjiao" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/incolud_text"
+            android:layout_centerInParent="true"
+            android:text="我的活动"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/incloud_other"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

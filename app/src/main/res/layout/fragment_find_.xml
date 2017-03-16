@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_find_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament3.Find_Fragment">
+
+
+    <LinearLayout
+
+        android:id="@+id/net_working_faxian_yuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_refresh_list_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:divider="#f1f7f8"
+
+            android:dividerHeight="10dip"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/net_working_faxian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/faxian_onchick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="请点击重试"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>
+

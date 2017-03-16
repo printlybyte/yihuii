@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\workstudio\\yihuii\\yihuii\\library_phoro_bga\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_picker.xml",
+        "source": "F:\\workstudio\\yihuii\\yihuii\\library_phoro_bga\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_picker.xml"
+    },
+    {
+        "merged": "F:\\workstudio\\yihuii\\yihuii\\library_phoro_bga\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_picker_preview.xml",
+        "source": "F:\\workstudio\\yihuii\\yihuii\\library_phoro_bga\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
+    },
+    {
+        "merged": "F:\\workstudio\\yihuii\\yihuii\\library_phoro_bga\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\bga_pp_menu_photo_preview.xml",
+        "source": "F:\\workstudio\\yihuii\\yihuii\\library_phoro_bga\\build\\intermediates\\bundles\\debug\\res\\menu\\bga_pp_menu_photo_preview.xml"
+    }
+]

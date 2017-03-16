@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">易会</string>
+
+       <string name="pull_to_refresh">下拉可以刷新</string>
+       <string name="release_to_refresh">释放立即刷新</string>
+       <string name="refreshing">正在刷新…</string>
+       <string name="not_updated_yet">暂未更新过</string>
+       <string name="updated_at">上次更新于%1$s前</string>
+        <string name="updated_just_now">刚刚更新</string>
+        <string name="time_error">时间有问题</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="arrUsernames">
+
+
+        <item>个地方</item>
+        <item>古典风格</item>
+        <item>啊到反感的</item>
+        <item>白典风格</item>
+    </string-array>
+    <string-array name="spinner_txt">
+        <item>商务</item>
+        <item>公共</item>
+
+    </string-array>
+    <string-array name="spinner_city">
+        <item>全部城市</item>
+
+    </string-array>
+    <string-array name="spinner_city2">
+        <item>全部类型</item>
+
+    </string-array>
+    <string name="title_activity_me_lianxifangshi">me_lianxifangshi</string>
+    <string name="title_activity_me_youxiang">me_youxiang</string>
+    <string name="save_succ">cxcx</string>
+
+
+</resources>

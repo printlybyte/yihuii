@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_me_weixin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f7f8"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.me_mingpian_edit.me_weixin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/banner">
+
+        <TextView
+            android:id="@+id/public_fanhui"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/back_jianjiao"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/public_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/public_baocun"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:textSize="15sp"
+        android:textColorHint="#ccc"
+        android:layout_marginTop="25dp"
+        android:id="@+id/public_edit"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+         android:background="#fff"
+        android:paddingLeft="27dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="#ccc" />
+
+
+</LinearLayout>

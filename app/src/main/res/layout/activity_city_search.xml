@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_city_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f7f8"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament1.city_search">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/banner">
+
+        <TextView
+            android:id="@+id/city_search_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/back_jianjiao"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp">
+
+        <Spinner
+            android:id="@+id/spinner_city_2"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/spiner"
+            android:entries="@array/spinner_city2">
+
+        </Spinner>
+
+        <Button
+            android:gravity="center_vertical"
+            android:id="@+id/spinner_city_1"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/spinner_city_2"
+            android:layout_alignBottom="@+id/spinner_city_2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/spiner"
+            android:text="全部城市">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp">
+
+        <EditText
+            android:id="@+id/city_search_edit"
+            android:layout_width="257dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spiner"
+            android:hint="请输入城市名"
+            android:paddingLeft="5dp"
+            android:textColorHint="#ccc" />
+
+        <TextView
+            android:id="@+id/city_search_yes"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spiner"
+            android:drawableLeft="@mipmap/search_blue"
+            android:paddingLeft="17dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:id="@+id/faxainjeiguo_txt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="发现结果"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:divider="#f1f7f8"
+            android:dividerHeight="10dp"
+            android:id="@+id/list_item_faxain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

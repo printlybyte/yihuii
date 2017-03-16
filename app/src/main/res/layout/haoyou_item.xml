@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f7f8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/haoyou_touxiang"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/haoyou_name"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignTop="@+id/haoyou_touxiang"
+            android:layout_toRightOf="@+id/haoyou_touxiang"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/haoyou_zhiwei"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/haoyou_touxiang"
+            android:layout_below="@+id/haoyou_name"
+            android:layout_toRightOf="@+id/haoyou_touxiang"
+            android:singleLine="true"
+            android:textColor="#ccc"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

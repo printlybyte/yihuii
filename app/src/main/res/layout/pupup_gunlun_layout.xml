@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/pupup_gunlun_queciao"
+            android:textColor="#fff"
+            android:text="取消"
+            android:textSize="20sp"
+            android:background="@drawable/btn_gunlun"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp" />
+        <Button
+            android:id="@+id/pupup_gunlun_yes"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:text="确认"
+            android:textSize="20sp"
+            android:background="@drawable/btn_gunlun"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+    </RelativeLayout>
+
+    <com.example.yihuii.yihuii.Coston_view_wheel.WheelView
+        android:id="@+id/wheelView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/re"
+        android:layout_height="200dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

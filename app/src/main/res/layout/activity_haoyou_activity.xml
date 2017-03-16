@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_haoyou_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f7f8"
+    android:orientation="vertical"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.me_Activity.me_activity_haoyou.haoyou_activity">
+
+    <include layout="@layout/inicode"></include>
+
+
+    <LinearLayout
+        android:id="@+id/text_auto"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:background="#e0e1e2"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+
+            android:id="@+id/autotext_frient_haoyou"
+            android:layout_width="242dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="55dp"
+            android:paddingLeft="40dp"
+            android:textSize="12sp"
+            android:background="@mipmap/auto_bejing"
+            android:completionThreshold="1"
+            android:drawableLeft="@mipmap/sousuo_text"
+            android:hint="搜索" />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list_haoyou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f1f7f8"
+        android:dividerHeight="10dip"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

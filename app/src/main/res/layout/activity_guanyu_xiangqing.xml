@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guanyu_xiangqing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament1.shezhi_pak.guanyu_xiangqing">
+
+    <include layout="@layout/inicode" />
+
+
+    <WebView
+        android:id="@+id/web_guanyu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

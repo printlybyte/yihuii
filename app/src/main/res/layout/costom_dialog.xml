@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+ <LinearLayout
+     android:background="@drawable/btn_style_pup"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="您确认删除此活动吗？"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginTop="10dp"
+
+    android:background="@mipmap/dele_beijing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/cos_dialog_btn1"
+        android:textColor="@color/lightskyblue"
+        android:textSize="20sp"
+        android:text="取消"
+        android:background="@null"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/cos_dialog_btn2"
+        android:textColor="@color/lightskyblue"
+        android:textSize="20sp"
+        android:text="删除"
+        android:background="@null"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+ </LinearLayout>
+</LinearLayout>

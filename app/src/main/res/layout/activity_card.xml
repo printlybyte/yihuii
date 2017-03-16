@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f7f8"
+    android:orientation="vertical"
+    tools:context="com.example.yihuii.yihuii.MainFrame.frament4.ziactivity.CardActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@mipmap/banner">
+
+                <TextView
+                    android:id="@+id/card_activity_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/back_jianjiao"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="编辑名片"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <Button
+                    android:textColor="#fff"
+                    android:text="更多"
+
+                    android:gravity="center"
+                    android:background="@null"
+                    android:id="@+id/mBtn_gengduo"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:background="@mipmap/jiange_item"
+
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/shezhi_touxiang"
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/shezhi_touxiang_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/me_touxiang" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="设置头像"
+                        android:textSize="9sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="273dp"
+                    android:layout_height="61dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:background="@drawable/btn_style_pup"
+                        android:paddingLeft="8dp" />
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_style_pup"
+                        android:hint="摩卡"
+                        android:paddingLeft="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/touying_touying" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/jiange_item"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="基本信息"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:id="@+id/checkbox_one_buju"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_one"
+
+
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#444425" />
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:text="性别"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:paddingRight="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:id="@+id/me_suozaidi"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+
+
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#444425" />
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:text="所在地"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:paddingRight="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@mipmap/touying_touying" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/jiange_item"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="工作"
+
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ccc" />
+
+                <RelativeLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/checkbox2"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp" />
+
+                    <LinearLayout
+
+                        android:id="@+id/checkbox_two_gongzuo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/checkbox2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/gongsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="公司"
+
+                            />
+
+                        <TextView
+
+                            android:id="@+id/zhiwei"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="职位"
+                             />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:paddingRight="15dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@mipmap/touying_touying" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/jiange_item"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="所属组织或着商协会"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:id="@+id/xxxxv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/jiange_item"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="职业标签"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:id="@+id/xxxxv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#ccc" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="教育经历"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:id="@+id/checkbox_there_xueli"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/me_xuexiao"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dp"
+                        android:text="学校" />
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <CheckBox
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkbox4"
+                            />
+
+                        <TextView
+
+                            android:id="@+id/me_zhuanye"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/checkbox4"
+                            android:drawableRight="@mipmap/fanhui_jianjiao"
+                            android:gravity="center_vertical"
+                            android:paddingRight="16dp"
+                            android:text="专业" />
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:id="@+id/me_ruxuenian"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45dp"
+                        android:text="入学年" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/touying_touying" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#f1f7f8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:background="@mipmap/jiange_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="联系方式"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+
+                <LinearLayout
+
+                    android:id="@+id/me_lianxifangshi_lianear"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/jiange_item"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/me_lianxifangshi_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:gravity="center_vertical"
+                        android:paddingRight="20dp"
+                        android:text="联系方式"
+                       />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+
+
+                <LinearLayout
+                    android:id="@+id/me_youxiang_lianear"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/jiange_item"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/me_youxiang"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:gravity="center_vertical"
+                        android:paddingRight="16dp"
+                        android:text="邮箱"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+
+
+                <LinearLayout
+                    android:id="@+id/me_weixin_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/jiange_item"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:id="@+id/me_weixin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:gravity="center_vertical"
+                        android:paddingRight="16dp"
+                        android:text="微信"
+                       />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+
+                <LinearLayout
+                    android:id="@+id/me_qq_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/jiange_item"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/me_qq"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:gravity="center_vertical"
+                        android:paddingRight="16dp"
+                        android:text="QQ"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+
+                <LinearLayout
+                    android:id="@+id/me_shouji_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/jiange_item"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:scaleX="0.7"
+                        android:scaleY="0.7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:id="@+id/me_shouji"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@mipmap/fanhui_jianjiao"
+                        android:gravity="center_vertical"
+                        android:paddingRight="16dp"
+                        android:text="手机"
+                       />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/touying_touying" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

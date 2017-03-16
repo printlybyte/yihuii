@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"></View>
+
+    <RelativeLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/me_huodong_touxaing"
+            android:layout_width="61dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/weijiazai" />
+
+        <TextView
+            android:id="@+id/me_huodong_biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/me_huodong_touxaing"
+            android:singleLine="true"
+            android:text="北京白马商贸有限公司"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_alignBottom="@+id/me_huodong_touxaing"
+            android:layout_below="@+id/me_huodong_biaoti"
+            android:layout_toRightOf="@+id/me_huodong_touxaing">
+
+            <TextView
+                android:focusable="false"
+                android:clickable="true"
+                android:id="@+id/me_huodong_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="33dp"
+                android:drawableBottom="@mipmap/me_huodong_pinglun" />
+
+            <TextView
+                android:focusable="false"
+                android:clickable="true"
+                android:id="@+id/me_huodong_huiyou"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="33dp"
+                android:layout_toLeftOf="@+id/me_huodong_pinglun"
+                android:drawableBottom="@mipmap/me_huodong_haoyou" />
+
+            <TextView
+                android:focusable="false"
+                android:clickable="true"
+                android:id="@+id/me_huodong_zhuanfa"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="33dp"
+                android:layout_toLeftOf="@+id/me_huodong_huiyou"
+                android:drawableBottom="@mipmap/me_huodong_zhuanfa"
+                />
+
+            <TextView
+                android:focusable="false"
+                android:clickable="true"
+                android:id="@+id/me_huodong_erweima"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="33dp"
+                android:drawableBottom="@mipmap/me_huodong_erweima" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"></View>
+</LinearLayout>
