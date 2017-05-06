@@ -26,6 +26,7 @@ import com.example.yihuii.yihuii.MainFrame.frament1.mingpian_tuku;
 import com.example.yihuii.yihuii.MainFrame.frament2.Frient_Fragment;
 import com.example.yihuii.yihuii.MainFrame.frament3.Find_Fragment;
 import com.example.yihuii.yihuii.MainFrame.frament4.Me_Fragment;
+import com.example.yihuii.yihuii.MainFrame.utill.OkhttpUitllss;
 import com.example.yihuii.yihuii.R;
 
 import java.util.ArrayList;
@@ -63,7 +64,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     * @param 初始化布局控件
     * */
     private void initView() {
-
 
         btn_activity = (Button) findViewById(R.id.btn_activity);
         btn_frient = (Button) findViewById(R.id.btn_frient);

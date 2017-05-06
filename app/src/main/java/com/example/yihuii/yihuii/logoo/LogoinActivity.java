@@ -30,7 +30,7 @@ public class LogoinActivity extends AppCompatActivity implements View.OnClickLis
     private String PASSWORD = "123456";
     private int HANDLER_NUM = 0;
     private Dialog dialog;
-//   String  APP_ID="wx74c15f9950ca03b1";
+    //   String  APP_ID="wx74c15f9950ca03b1";
 //    IWXAPI api;
 //    String text="qwe";
     /*
@@ -97,7 +97,11 @@ public class LogoinActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_registT:
-                mobValide();
+                //  mobValide();
+
+                Intent intent3 = new Intent(this, RegistUser.class);
+                startActivity(intent3);
+
                 break;
             case R.id.button_forget:
                 Intent intent = new Intent(LogoinActivity.this, ForgetPwd.class);
@@ -139,6 +143,8 @@ public class LogoinActivity extends AppCompatActivity implements View.OnClickLis
 //        api = WXAPIFactory.createWXAPI(LogoinActivity.this,APP_ID, true);
 //        api.registerApp(APP_ID);
 //    }
+
+
     private void mobValide() {
         RegisterPage registerPage = new RegisterPage();
         registerPage.setRegisterCallback(new EventHandler() {

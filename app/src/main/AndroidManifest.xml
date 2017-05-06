@@ -144,7 +144,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".MainFrame.frament4.ziactivity.gerenmingpian_yulan" />
-        <activity android:name=".MainFrame.frament4.me_Activity.me_activity_pinglun.pinglun_xiangqing"></activity>
+        <activity android:name=".MainFrame.frament4.me_Activity.me_activity_pinglun.pinglun_xiangqing" />
+        <activity android:name=".logoo.RegistUser"></activity>
     </application>
 
 </manifest>

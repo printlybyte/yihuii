@@ -196,7 +196,7 @@ public class Frient_Fragment extends Fragment implements SideBar
     }
 
     private void doHttp() {
-        kjh.get("http://litchiapi.jstv.com/api/GetFeeds?column=0&PageSize=20&pageIndex=11", new HttpCallBack() {
+        kjh.get(PATH_URL, new HttpCallBack() {
             @Override
             public void onSuccess(String t) {
                 super.onSuccess(t);
